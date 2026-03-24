@@ -1,90 +1,225 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nathan Sutherland | Cybersecurity Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
       background: #0f172a;
       color: #e2e8f0;
+      line-height: 1.6;
     }
+
     header {
-      background: #020617;
-      padding: 20px;
+      background: linear-gradient(135deg, #020617, #0f172a);
+      padding: 60px 20px;
       text-align: center;
+      border-bottom: 2px solid #38bdf8;
     }
-    h1 { margin: 0; }
-    section {
-      padding: 40px;
-      max-width: 900px;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+
+    main {
+      max-width: 950px;
       margin: auto;
+      padding: 30px 20px 60px;
     }
+
+    section {
+      margin-bottom: 30px;
+    }
+
     h2 {
       border-bottom: 2px solid #38bdf8;
-      padding-bottom: 5px;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      color: #f8fafc;
     }
+
     .card {
       background: #020617;
+      padding: 22px;
+      border-radius: 12px;
+      margin-top: 15px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
       padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
+    }
+
+    @media (max-width: 700px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
-
 <body>
+  <header>
+    <h1>Nathan Sutherland</h1>
+    <p>Cybersecurity Analyst | Digital Forensics | Network Defense</p>
+  </header>
 
-<header>
-  <h1>Nathan Sutherland</h1>
-  <p>Cybersecurity | Digital Forensics | Network Security</p>
-</header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am a cybersecurity professional with hands-on experience in digital forensics,
+          security controls, risk assessment, and network analysis. I have worked with
+          tools such as Wireshark, Nmap, Autopsy, and Kali Linux, and I am familiar with
+          industry frameworks including NIST Cybersecurity Framework, COBIT 2019, and
+          CIS Critical Security Controls.
+        </p>
+        <p>
+          I am especially interested in defensive security, incident response, and
+          practical cybersecurity work that helps organizations monitor, defend, and
+          investigate threats.
+        </p>
+      </div>
+    </section>
 
-<section>
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      Cybersecurity professional with experience in digital forensics,
-      network analysis, and risk assessment. Skilled in tools like
-      Wireshark, Nmap, and Autopsy, with knowledge of NIST and COBIT frameworks.
-    </p>
-  </div>
+    <section class="two-column">
+      <div>
+        <h2>Experience</h2>
+        <div class="card">
+          <h3>Oak Ridge National Laboratory</h3>
+          <p><strong>Cyber Defense Intern</strong></p>
+          <p>
+            Gained hands-on experience in cybersecurity defense, monitoring, and analysis
+            within a real-world security environment.
+          </p>
+        </div>
+      </div>
 
-  <h2>Skills</h2>
-  <div class="card">
-    <ul>
-      <li>Incident Response & Threat Detection</li>
-      <li>Risk Assessment & Compliance</li>
-      <li>Wireshark, Nmap, Autopsy</li>
-      <li>Kali Linux & Network Analysis</li>
-    </ul>
-  </div>
+      <div>
+        <h2>Education</h2>
+        <div class="card">
+          <h3>Pellissippi State Community College</h3>
+          <p>Associate Degree in Cybersecurity</p>
+          <p>Knoxville, Tennessee</p>
+        </div>
+      </div>
+    </section>
 
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>Digital Forensics Investigations</h3>
-    <p>Used Autopsy to analyze systems, detect anomalies, and support investigations.</p>
+    <section>
+      <h2>Certifications</h2>
+      <div class="card">
+        <h3>Certiport Cybersecurity Certification</h3>
+        <p><strong>Score:</strong> 795 / 1000</p>
+        <p><strong>Status:</strong> Passed</p>
+        <p>
+          Strong performance in security principles, network security,
+          vulnerability assessment, risk management, and incident management.
+        </p>
+      </div>
+    </section>
 
-```
-<h3>Network Traffic Analysis</h3>
-<p>Captured and analyzed packets using Wireshark and Nmap to identify vulnerabilities.</p>
-```
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <ul>
+          <li>Digital Forensics</li>
+          <li>Incident Detection and Response</li>
+          <li>Risk Assessment</li>
+          <li>Compliance Auditing and Evidence Handling</li>
+          <li>Security Controls</li>
+          <li>Wireshark</li>
+          <li>Nmap</li>
+          <li>Autopsy</li>
+          <li>Kali Linux</li>
+          <li>NIST Cybersecurity Framework</li>
+          <li>COBIT 2019</li>
+          <li>CIS Critical Security Controls</li>
+          <li>Leadership and De-escalation</li>
+        </ul>
+      </div>
+    </section>
 
-  </div>
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Digital Forensics Investigations</h3>
+        <p>
+          Used Autopsy to analyze systems, identify communication patterns,
+          establish baselines, and support incident investigations with
+          forensic evidence.
+        </p>
 
-  <h2>Education</h2>
-  <div class="card">
-    <p>Pellissippi State Community College – Cybersecurity (AAS)</p>
-  </div>
+        <h3>Network Traffic Analysis</h3>
+        <p>
+          Used Wireshark and Nmap to inspect network traffic, identify anomalies,
+          audit systems, and detect unusual or unauthorized activity.
+        </p>
 
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: nsutherland345@gmail.com</p>
-    <p>Phone: 865-661-8922</p>
-  </div>
-</section>
+        <h3>Kali Linux Security Labs</h3>
+        <p>
+          Completed practical cybersecurity lab work involving Linux environments,
+          network analysis, and security-focused exercises.
+        </p>
+      </div>
+    </section>
 
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:nsutherland345@gmail.com">nsutherland345@gmail.com</a></p>
+        <p><strong>Phone:</strong> 865-661-8922</p>
+        <p><strong>Location:</strong> Knoxville, Tennessee</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Nathan Sutherland | Cybersecurity Portfolio</p>
+  </footer>
 </body>
 </html>
